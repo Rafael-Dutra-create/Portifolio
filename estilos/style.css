@@ -144,11 +144,13 @@ main > section > p{
 
 #conhecimentos > ul{
     display: block;
+    list-style-type: none;
 }
 #conhecimentos > ul > li{
     list-style-type: none;
 }
-#power-bi{    
+#power-bi{   
+    list-style-type: none; 
     width: 85px;
     height: 85px;
     margin: 5px;    
