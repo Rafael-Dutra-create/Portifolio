@@ -9,28 +9,30 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 
 body{
-    width: 98vw;
+    width: 100vw;
     
     background-image: var(--degrade);    
     font-family: 'Sriracha', cursive;
-    
+
+    overflow-x: hidden;
 }
 h1{
     text-shadow: 2px 2px 3px black;
     font-size: 2em;
     margin: 2vw;
     padding-top: 1vh;
-
+    
     
     font-size: 2em;
 }
 
 /*HEAD*/
 header{
-    width: 100vw;
+    width: 90vw;
     height: 200px;   
     text-align: center;
     margin-top: 3vh;
@@ -45,7 +47,7 @@ header >div> a > #minha-foto{
     height: 200px;
     border-radius: 50%;
     align-content: center; 
- 
+    
     background-size: cover; 
     box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.6);
     
@@ -87,7 +89,7 @@ nav > ul{
 main > section{
     margin: 10%;    
     width: 80vw;    
-
+    
     text-align: center;
     color: var(--letra-cor);
     background-color: rgba(161, 161, 161, 0.7);
