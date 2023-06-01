@@ -50,6 +50,9 @@ header >div> a > #minha-foto{
     box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.6);
     
 }  
+header >div> a > #minha-foto:hover{
+    border: 2px solid white;
+}
 nav{
     width: 100vw;
 }
@@ -68,7 +71,7 @@ nav > ul{
     nav > ul > li > a > img:hover{
         border: 2px solid rgba(255, 255, 255, 0.7);
         transform: translate(-4px, -4px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
         transition: transform 0.3s;
     }    
     nav > ul > li > a > img{
@@ -76,7 +79,7 @@ nav > ul{
         height: 60px;
         border-radius: 50%; 
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
-        box-sizing: border-box;    
+        box-sizing: border-box;           
     }
 
 
@@ -258,3 +261,15 @@ main > section > p{
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
         transition: transform 0.3s;
     }
+
+footer{
+    width: 100vw;
+    background-color: #3F05FC;
+    color: var(--letra-cor);
+    text-align: center;
+}
+footer > ul{
+    list-style: none;
+    text-align: center;
+    columns: 2;    
+}
