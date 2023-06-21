@@ -5,6 +5,7 @@
     --degrade: linear-gradient(to bottom, #3F05FC, #050CE3, #1157FA, #0583E3, #05D3FC);
     --degrade-cabecalho: linear-gradient(to bottom, #3F05FC);
     --letra-cor: white;
+    --footer:#3F05FC;
 }
 *{
     margin: 0px;
@@ -129,7 +130,7 @@ main > section > p{
     background-size: cover; 
 }
 #projetos > div>ul>li>a>img:hover{
-    border: 2px solid lightgreen;
+    border: 2px solid var(--footer);
     transform: translate(-2px, -2px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
     transition: transform 0.3s;
@@ -137,7 +138,7 @@ main > section > p{
 
 #conhecimentos{
     width: 80vw;
-    margin: 10%;  
+    margin: 10%;     
 
     text-align: center;
     color: var(--letra-cor);
@@ -167,9 +168,7 @@ main > section > p{
     box-shadow: 2px 2px 5px black;
 }   
     #power-bi:hover{
-        border: 2px solid lightgreen;
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+        border: 2px solid var(--footer);        
         transition: transform 0.3s;    
     }
     
@@ -186,9 +185,7 @@ main > section > p{
     box-shadow: 2px 2px 5px black;
 }
     #excel:hover{
-        border: 2px solid lightgreen;
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+        border: 2px solid var(--footer);        
         transition: transform 0.3s;
     }
 
@@ -204,9 +201,7 @@ main > section > p{
     box-shadow: 2px 2px 5px black;
 }
     #excel:hover{
-        border: 2px solid lightgreen;
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+        border: 2px solid var(--footer);        
         transition: transform 0.3s;
     }
 
@@ -222,9 +217,7 @@ main > section > p{
     box-shadow: 2px 2px 5px black;
 }
     #html:hover{
-        border: 2px solid lightgreen;
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+        border: 2px solid var(--footer);        
         transition: transform 0.3s;
     }
 
@@ -240,9 +233,7 @@ main > section > p{
     box-shadow: 2px 2px 5px black;
 }
     #css:hover{
-        border: 2px solid lightgreen;
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+        border: 2px solid var(--footer);        
         transition: transform 0.3s;
     }
 
@@ -258,9 +249,7 @@ main > section > p{
     box-shadow: 2px 2px 5px black;
 }
     #javascript:hover{
-        border: 2px solid lightgreen;
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+        border: 2px solid var(--footer);        
         transition: transform 0.3s;
     }
 
