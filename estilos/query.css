@@ -17,11 +17,9 @@ Grandes Telas: acima de 1200px
     --letra-cor: white;
 }
 
-@media screen and (min-width: 640px) and (max-width: 992px){
-    #projetos > div > ul{
-        display: block;
-        columns: 2;
-        
+@media screen and (max-width: 992px){
+    #projetos > div > ul{        
+        columns: 2;        
     }
     #projetos > div > ul > li{
         margin-bottom: 10px;
@@ -31,29 +29,165 @@ Grandes Telas: acima de 1200px
         display: inline-flex;
         
     }
-    
+    main > section#projetos h1{
+        text-shadow: 2px 2px 3px black;
+        font-size: 2em;
+        margin: auto;
+        padding-top: 1vh;
+        font-size: 2em;
+    }
 
+    main > section#conhecimentos h1{
+        text-shadow: 2px 2px 3px black;
+        font-size: 2em;
+        margin: auto;
+        padding-top: 1vh;
+        font-size: 2em;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 98%;
+    }
+    .card{
+        width: 150px;
+        height: 150px;        
+        margin: .1rem 0 0 0;        
+    }
+    .card-text{
+        margin: 0;
+        letter-spacing: .5px;
+    }
+    .card-text{
+        width: 60%;
+        letter-spacing: 1px;
+        color: white;
+        text-align: justify;
+    }
+    .card-text p{
+        margin-left: .8rem;
+        margin-right: .2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card-wrapper{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .card-wrapper::before{
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: block;
+        border: 1px solid white;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .card-wrapper h2{
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: 0;
+        transition: 0.5s ease-in-out;
+    }
+    .card-wrapper p{
+        font-size: 0;
+        visibility: visible;
+        opacity: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 0.5s ease-in-out;
+    }
+    .card:hover{
+        filter:unset;
+    }
+    .card:hover > .card-wrapper::before{
+        height: 100px;
+        width: 100px;
+        opacity: 1;
+    }
+    .card:hover > .card-wrapper p{
+        opacity: 1;
+        visibility: visible;
+        font-size: 9px;
+    }
 }
 
-@media screen and (min-width: 992px) {
-    #projetos > div > ul{
-        display: block;
-        columns: 4;
+@media screen and (min-width: 992px) {  
+
+    /*SOBRE MIM*/
+    main >section > div#foto{
+        display: flex;
+        margin: auto;
+        margin-left: 1rem;
+    }
+    main >section > div{
+        margin: 1rem;
+    }
+    main > section > div > a > img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        align-content: center; 
         
+        background-size: cover; 
+        box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.6);
     }
-    #projetos > div > ul > li{
-        margin-bottom: 10px;
+    main > section > div > a > img:hover{
+        border: 2px solid #05d3fc;
+        transform: translate(-4px, -4px);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
+        transition: transform 0.3s;
     }
-    #conhecimentos > ul{
-        display: inline-flex;
-        
+    main > section{
+        width: 90%;        
+        margin: auto;        
+        margin-bottom: 2rem; 
+        display: flex;
+        align-items: center;        
+        text-align: justify;
+        color: var(--letra-cor);
+        background-color: rgba(161, 161, 161, 0.7);
+        border-radius: 0px 20px 20px 20px;        
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.808);  
     }
-    #conhecimentos > ul > li{
-        margin: 5px;
+    main > section > div > h1,p{
+        width: 95%;
+        padding: 2rem;
+        font-size: larger;
+        letter-spacing: 4px;        
     }
-    h1{
-        margin: 20px;
+
+    /*CONHECIMENTOS*/
+    main > section#conhecimentos {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    main > section#conhecimentos h1{
+        text-shadow: 2px 2px 3px black;
+        font-size: 2em;
+        margin: auto;
+        padding-top: 1vh;
+        font-size: 2em;
     }
     
-    
+
+    /*Projetos*/
+    main > section#projetos h1{
+        text-shadow: 2px 2px 3px black;
+        font-size: 2em;
+        margin: auto;
+        padding-top: 1vh;
+        font-size: 2em;
+    }
 }
