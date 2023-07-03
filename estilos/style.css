@@ -188,8 +188,7 @@ h1{
 
 #toggle:checked ~.menu-itens{    
     visibility: visible;
-    opacity: 1;
-    
+    opacity: 1;    
 }
 
 

@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/query.css">
     <link rel="shortcut icon" href="estilos/imagem/favicon.png" type="image/x-icon">
+    <script defer>
+        function itemmenu(){
+            const check = document.querySelector('#toggle')
+            if (check.checked = false){
+                check.checked = true
+            }
+            if (check.checked = true){
+                check.checked = false
+            }
+        }
+    </script>
     
     <title>Rafael Dutra</title>
 </head>
@@ -27,13 +38,13 @@
                         <nav class="menu-itens">
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#" onclick="itemmenu()">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#sobre">Sobre</a>
+                                    <a href="#sobre" onclick="itemmenu()">Sobre</a>
                                 </li>
                                 <li>
-                                    <a href="#projetos">Projetos</a>
+                                    <a href="#projetos" onclick="itemmenu()">Projetos</a>
                                 </li>
                             </ul>
                         </nav>
